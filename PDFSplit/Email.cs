@@ -120,7 +120,7 @@ namespace PDFSplit
 
             MailMessage mm = new MailMessage(Properties.Settings.Default.Email_ID, recipient);
             mm.Subject = "Your certificate";
-            mm.Body = "Hello <br />" + Name+" and Enroll"+Enrollment;
+            mm.Body = "Dear <br />" + Name+" and Enroll"+Enrollment;
             mm.IsBodyHtml = true;
             SmtpClient smtp = new SmtpClient();
             smtp.Host = "smtp.gmail.com";
